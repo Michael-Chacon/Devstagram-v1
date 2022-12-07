@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function __construct()
     {
-        $this->middelware('auth');
+        $this->middleware('auth');
     }
 
     public function __invoke()
