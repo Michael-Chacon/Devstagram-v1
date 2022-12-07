@@ -4,5 +4,5 @@
 @endsection
 
 @section('contenido')
-    <p>Contenido de la página principal</p>
+    {{ dd($post) }}
 @endsection
