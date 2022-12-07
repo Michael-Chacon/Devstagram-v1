@@ -7,13 +7,19 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    public function __construct()
+    {
+        $this->middelware('auth');
+    }
+
     public function __invoke()
     {
         // Obtener a quienes seguimos 
         $ids = auth()->user()->followings->pluck('id')->toArray();
-        // Filtrar los datos, whereIn xq estamos usando toArray en la variable $ids
-        $post = Post::whereIn('user_id', $ids)->paginate(20);
 
-        return view('home', compact('post'));
+        // Filtrar los datos, whereIn xq estamos usando toArray en la variable $ids
+        $posts = Post::whereIn('user_id', $ids)->latest()->paginate(20);
+
+        return view('home', compact('posts'));
     }
 }

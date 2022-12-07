@@ -17,7 +17,7 @@ class PostController extends Controller
     public function index(User $user)
     {
         // Utilisamos el Route Model Build para filtrar los posts por usuario
-        $posts = Post::where('user_id', $user->id)->paginate(5);
+        $posts = Post::where('user_id', $user->id)->latest()->paginate(5);
 
         return view('dashboard', [
             'user' => $user, 
