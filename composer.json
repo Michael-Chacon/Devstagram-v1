@@ -5,11 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-<<<<<<< HEAD
         "php": "^8.2.0",
-=======
-        "php": "^8.1.0",
->>>>>>> 9da964b0b17726560666d045a38abe68d8c8e74a
         "guzzlehttp/guzzle": "^7.2",
         "intervention/image": "^2.7",
         "laravel/framework": "^9.19",
