@@ -1,0 +1,49 @@
+* [33mcc1fa62[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m n
+*   [33mc8b9414[m tal
+[32m|[m[33m\[m  
+[32m|[m *   [33m9da964b[m Merge pull request #3 from Michael-Chacon/deploytment
+[32m|[m [34m|[m[35m\[m  
+[32m|[m * [35m\[m   [33m4e913a5[m Merge pull request #2 from Michael-Chacon/deploytment
+[32m|[m [36m|[m[1;31m\[m [35m\[m  
+[32m|[m * [1;31m\[m [35m\[m   [33ma8e24de[m Merge pull request #1 from Michael-Chacon/deploytment
+[32m|[m [1;32m|[m[1;33m\[m [1;31m\[m [35m\[m  
+* [1;32m|[m [1;33m|[m [1;31m|[m [35m|[m [33m1c7c004[m request
+[1;32m|[m[1;32m/[m [1;33m/[m [1;31m/[m [35m/[m  
+[1;32m|[m [1;33m|[m [1;31m|[m [35m|[m * [33m3861033[m[33m ([m[1;31morigin/deploytment[m[33m, [m[1;32mdeploytment[m[33m)[m despliegue
+[1;32m|[m [1;33m|[m [1;31m|[m [35m|[m[35m/[m  
+[1;32m|[m [1;33m|[m [1;31m|[m * [33maea95fd[m composer.json php 8.1.0
+[1;32m|[m [1;33m|[m [1;31m|[m[1;31m/[m  
+[1;32m|[m [1;33m|[m * [33m6013ec2[m error en el deploy
+[1;32m|[m [1;33m|[m * [33mf15e3f8[m eliminé un archivo de docker
+[1;32m|[m [1;33m|[m * [33m597b95e[m ajustar composer
+[1;32m|[m [1;33m|[m[1;33m/[m  
+[1;32m|[m * [33m13d84d7[m Procfile y htaccess
+[1;32m|[m * [33mc13f3cf[m AppServiceProvider con https
+[1;32m|[m[1;32m/[m  
+* [33m9535389[m Cambios finales
+* [33m5585306[m like con livewire
+* [33me0b40e0[m Instalé Livewire
+* [33m59417ab[m Component for show posts
+* [33m8e19b86[m Function to the users can view the posts of the users that follow
+*   [33md5e558f[m Merge branch 'main' of https://github.com/Michael-Chacon/Devstagram-v1
+[1;35m|[m[1;36m\[m  
+[1;35m|[m * [33m05c9b35[m cambiando de entorno de desarrollo: de docker a local
+* [1;36m|[m [33m550097f[m Retomando proyecto
+[1;36m|[m[1;36m/[m  
+* [33m1bac77d[m ready the function to follow and unfollow
+* [33m2bd2243[m Editar username y imagen de perfil
+* [33ma62c49c[m Boton de like, dislike y contar los likes
+* [33m49826c8[m Eliminar publicación junto a la imagen adjunta y onDelete cascade para los comentarios de las publicaciones eliminaidas
+* [33m6e7c0c7[m Registrar y mostrar comentarios
+* [33m3be6e90[m Paginacion y vista show
+* [33m3773e12[m Registrar y mostrar publicaciones
+* [33m7d2aae7[m Cree la factory para Post
+* [33md74ab27[m Se implementó Dropzone e intervention image
+* [33ma9641bc[m Ruta y formulario para crear publication
+* [33m77708c7[m Route model building
+* [33m03fb54b[m Remember token
+* [33m1dfaac4[m Logout
+* [33m02f9b91[m Login y registro al 99%
+* [33m507e2b4[m Formulario de registro
+* [33m2148b95[m Login
+* [33m8560190[m first commit

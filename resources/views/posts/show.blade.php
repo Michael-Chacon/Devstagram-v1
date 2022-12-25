@@ -44,18 +44,7 @@
             @if (session('mensaje'))
                 <p class="bg-green-500 text-white my-2 rounded-lg text-sm p-2 text-center">{{ session('mensaje')}}</p>
             @endif
-            <form action="{{ route('comentarios.store', ['user' => $user, 'post' => $post]) }}" method="POST">
-                @csrf
-                <div class="mb-5">
-                    <label for="comentario" class="mb-2 block uppercase text-gray-500 font-bold">Comment:</label>
-                    <textarea type="text" id="comentario" name="comentario" placeholder="Add Comment" class="border p-3 w-full rounded-lg @error('descripcion') border-red-500 @enderror"></textarea>
-                    @error('comentario')
-                        <p class="bg-red-500 text-black my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
-                    @enderror
-                </div>
-                
-                <input type="submit" value="Comentar" class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg">
-            </form>
+            <livewire:registrar-comentario :post="$post"/>
             @endauth
             <div class="mt-10 bg-white shadow md-5 rounded max-h-96 overflow-y-scroll">
                 @if ($post->comentarios->count())
