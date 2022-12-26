@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Comentario;
+use App\Models\Post;
 
 class RegistrarComentario extends Component
 {
@@ -24,7 +25,12 @@ class RegistrarComentario extends Component
             'post_id' => $this->post->id,
             'comentario' => $this->comentario,
         ]);
+        $this->reset(['comentario']);
+        
+        $this->emit('obtenerComentarios');
+        $this->emitTo('mostrar-comentario', 'alertaRegistro');
     }
+    
 
     public function render()
     {
