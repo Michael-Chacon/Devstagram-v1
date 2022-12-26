@@ -26,9 +26,9 @@ class RegistrarComentario extends Component
             'comentario' => $this->comentario,
         ]);
         $this->reset(['comentario']);
-        
+
         $this->emit('obtenerComentarios');
-        $this->emitTo('mostrar-comentario', 'alertaRegistro');
+        $this->emit('alertaRegistro');
     }
     
 
